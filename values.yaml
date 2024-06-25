@@ -96,7 +96,7 @@ global:
 front:
   replicas: 1
   service:
-    port: 80
+    port: 3002
   resources:
     requests:
       memory: 512Mi
@@ -107,7 +107,7 @@ front:
 api:
   replicas: 1
   service:
-    port: 3000
+    port: 3001
   rails:
     maxThreads: 10
     webConcurrency: 4
